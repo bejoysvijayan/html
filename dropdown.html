@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" type="image/png" href="favicon.png">
-<title>Hubnet :: Announcement</title>
+<title>Hubnet :: Dashboard</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -15,15 +15,29 @@
     <div class="pull-right">
       <div class="searchWrap clearfix">
         <div class="searchOptions">
-        	<img src="images/icon-searchbar.png" alt="Search options"> 
-            
+        	<img src="images/icon-searchbar.png" alt="Search options"> <span class="icon-search-dropDown"></span>
+            <ul class="searchBarDropdown">
+                <li class="searchAll"><a href="#">All</a></li>
+                <li class="searchWikis"><a href="#">Wikis</a></li>
+                <li class="searchFiles"><a href="#">Files</a></li>
+                <li class="searchPeopleDirectory"><a href="#">People Directory</a></li>
+                <li class="searchHubs"><a href="#">Hubs</a></li>
+                <li class="searchEgnyte"><a href="#">Egnyte</a></li>
+        	</ul>	
         </div>
         <input type="search" class="inputSearch" placeholder="Search for files, content, people, tags...">
         <button class="btn-search"><img src="images/icon-search.png" width="18" height="18" alt="Search"></button>
       </div>
       <div class="userProfile">
         <div class="profilePic"><img src="images/img-user-maria.jpg" width="30" height="30" alt="Maria"></div>
-        <div class="userSettings"><a href="#" class="greetings">Hi <span class="userName">Maria</span></a></div>
+        <div class="userSettings">
+        	<a href="#" class="greetings">Hi <span class="userName">Maria</span></a>
+            <ul class="userSettingsDropdown">
+                <li class="user-settings"><a href="#">Settings</a></li>
+                <li class="user-profile"><a href="#">My Profile</a></li>
+                <li class="user-logout"><a href="#">Logout</a></li>
+        	</ul>
+        </div>
       </div>
     </div>
   </header>
@@ -419,44 +433,6 @@
       </div><!-- /. dashboard contents -->
     </section>
   </div>
-</div>
-<div class="overlay"></div>
-<div class="popup annoucement">
-	<a href="#" class="close"><img src="images/icon-close.png" width="15" height="15" alt="close"></a>
-    
-    <h2>Health tip of the week</h2>	
-    <div class="greyBox creator clearfix">
-    	<h3>Sent By</h3>
-    	<div class="column01">
-        <div class="profilePic"><img src="images/img-user04.png" width="50" height="50" alt="amir"></div>
-        </div>
-        <div class="column02">
-        	<div class="userTitle row">
-            <h5>Kunal Phadnis</h5>
-            </div>
-            <div class="userDetails">
-            <a href="mailto:gopale.rajiv76@gmail.com" class="userMail">gopale.rajiv76@gmail.com</a>
-            <a href="#" class="userProfile">View Kunal’s Profile</a>	
-            </div>
-        </div>
-  </div>
-  	<div class="post">
-        <div class="block expand">
-            <h3>Attachments</h3>
-            <p><span class="fileDownloadMini bullet">Health-top-part1.doc</span><span class="fileSize"> 99 KB</span></p>
-            <p><span class="fileDownloadMini bullet">Health-top-part1.doc</span><span class="fileSize"> 99 KB</span></p>
-        </div>
-        <div class="block">
-           <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam laoreet dui non mauris convallis, efficitur fermentum dolor rhoncus.</h3>
-           <p>Duis sit amet neque nibh. Sed interdum ante eu enim egestas tempor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla tincidunt sem justo, sed porttitor velit porttitor feugiat. Morbi ut justo faucibus, euismod lacus eu, scelerisque felis. Lorem ipsum dolor sit amet.</p>
-           <div class="videoHolder">
-           	<h4>HappyTogether.mp4</h4>
-            <iframe width="560" height="315" src="http://www.youtube.com/embed/-kfrgeGzKgc" frameborder="0" allowfullscreen></iframe>
-           </div>
-        </div>
-        
-	</div>
-    </div>
 </div>
 </body>
 </html>
